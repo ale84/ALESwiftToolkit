@@ -13,6 +13,19 @@
 		CA3AF6182A7805D100C16EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3AF6162A7805D100C16EDB /* Main.storyboard */; };
 		CA3AF61A2A7805D200C16EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3AF6192A7805D200C16EDB /* Assets.xcassets */; };
 		CA3AF61D2A7805D200C16EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3AF61B2A7805D200C16EDB /* LaunchScreen.storyboard */; };
+		CA3AF62A2A7805FC00C16EDB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6252A7805FB00C16EDB /* Coordinator.swift */; };
+		CA3AF62B2A7805FC00C16EDB /* NavigationControllerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6262A7805FC00C16EDB /* NavigationControllerObserver.swift */; };
+		CA3AF62C2A7805FC00C16EDB /* Coordinator+DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6272A7805FC00C16EDB /* Coordinator+DeepLink.swift */; };
+		CA3AF62D2A7805FC00C16EDB /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6282A7805FC00C16EDB /* UINavigationController+Utils.swift */; };
+		CA3AF62E2A7805FC00C16EDB /* Coordinator+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6292A7805FC00C16EDB /* Coordinator+Utils.swift */; };
+		CA3AF6312A78068E00C16EDB /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6302A78068E00C16EDB /* DeepLinkHandler.swift */; };
+		CA3AF6332A7806A000C16EDB /* DeepLinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6322A7806A000C16EDB /* DeepLinkType.swift */; };
+		CA3AF6362A7806E000C16EDB /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6352A7806E000C16EDB /* Date+Utils.swift */; };
+		CA3AF6392A78070400C16EDB /* String+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6382A78070400C16EDB /* String+Optional.swift */; };
+		CA3AF63C2A78090E00C16EDB /* EntityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF63B2A78090E00C16EDB /* EntityMonitor.swift */; };
+		CA3AF63F2A78092F00C16EDB /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF63E2A78092F00C16EDB /* IAPHelper.swift */; };
+		CA3AF6412A7809A400C16EDB /* BFProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6402A7809A400C16EDB /* BFProduct.swift */; };
+		CA3AF6442A7809F500C16EDB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AF6432A7809F500C16EDB /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		CA3AF6192A7805D200C16EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA3AF61C2A7805D200C16EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA3AF61E2A7805D200C16EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3AF6252A7805FB00C16EDB /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CA3AF6262A7805FC00C16EDB /* NavigationControllerObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerObserver.swift; sourceTree = "<group>"; };
+		CA3AF6272A7805FC00C16EDB /* Coordinator+DeepLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinator+DeepLink.swift"; sourceTree = "<group>"; };
+		CA3AF6282A7805FC00C16EDB /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
+		CA3AF6292A7805FC00C16EDB /* Coordinator+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinator+Utils.swift"; sourceTree = "<group>"; };
+		CA3AF6302A78068E00C16EDB /* DeepLinkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		CA3AF6322A7806A000C16EDB /* DeepLinkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkType.swift; sourceTree = "<group>"; };
+		CA3AF6352A7806E000C16EDB /* Date+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		CA3AF6382A78070400C16EDB /* String+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Optional.swift"; sourceTree = "<group>"; };
+		CA3AF63B2A78090E00C16EDB /* EntityMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityMonitor.swift; sourceTree = "<group>"; };
+		CA3AF63E2A78092F00C16EDB /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		CA3AF6402A7809A400C16EDB /* BFProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFProduct.swift; sourceTree = "<group>"; };
+		CA3AF6432A7809F500C16EDB /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,84 @@
 		CA3AF60F2A7805D100C16EDB /* ALEBenchmark */ = {
 			isa = PBXGroup;
 			children = (
+				CA3AF61E2A7805D200C16EDB /* Info.plist */,
 				CA3AF6102A7805D100C16EDB /* AppDelegate.swift */,
 				CA3AF6122A7805D100C16EDB /* SceneDelegate.swift */,
 				CA3AF6142A7805D100C16EDB /* ViewController.swift */,
-				CA3AF6162A7805D100C16EDB /* Main.storyboard */,
 				CA3AF6192A7805D200C16EDB /* Assets.xcassets */,
+				CA3AF6242A7805EA00C16EDB /* Coordinator */,
+				CA3AF63A2A78090000C16EDB /* CoreData */,
+				CA3AF6342A7806CB00C16EDB /* Dates */,
+				CA3AF62F2A78063F00C16EDB /* DeepLink */,
+				CA3AF63D2A78091200C16EDB /* InAppPurchase */,
 				CA3AF61B2A7805D200C16EDB /* LaunchScreen.storyboard */,
-				CA3AF61E2A7805D200C16EDB /* Info.plist */,
+				CA3AF6422A7809E200C16EDB /* Logging */,
+				CA3AF6162A7805D100C16EDB /* Main.storyboard */,
+				CA3AF6372A7806F700C16EDB /* Strings */,
 			);
 			path = ALEBenchmark;
+			sourceTree = "<group>";
+		};
+		CA3AF6242A7805EA00C16EDB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CA3AF6252A7805FB00C16EDB /* Coordinator.swift */,
+				CA3AF6272A7805FC00C16EDB /* Coordinator+DeepLink.swift */,
+				CA3AF6292A7805FC00C16EDB /* Coordinator+Utils.swift */,
+				CA3AF6262A7805FC00C16EDB /* NavigationControllerObserver.swift */,
+				CA3AF6282A7805FC00C16EDB /* UINavigationController+Utils.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CA3AF62F2A78063F00C16EDB /* DeepLink */ = {
+			isa = PBXGroup;
+			children = (
+				CA3AF6322A7806A000C16EDB /* DeepLinkType.swift */,
+				CA3AF6302A78068E00C16EDB /* DeepLinkHandler.swift */,
+			);
+			path = DeepLink;
+			sourceTree = "<group>";
+		};
+		CA3AF6342A7806CB00C16EDB /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				CA3AF6352A7806E000C16EDB /* Date+Utils.swift */,
+			);
+			path = Dates;
+			sourceTree = "<group>";
+		};
+		CA3AF6372A7806F700C16EDB /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				CA3AF6382A78070400C16EDB /* String+Optional.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		CA3AF63A2A78090000C16EDB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CA3AF63B2A78090E00C16EDB /* EntityMonitor.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CA3AF63D2A78091200C16EDB /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				CA3AF6402A7809A400C16EDB /* BFProduct.swift */,
+				CA3AF63E2A78092F00C16EDB /* IAPHelper.swift */,
+			);
+			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		CA3AF6422A7809E200C16EDB /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				CA3AF6432A7809F500C16EDB /* Logger.swift */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +233,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3AF6412A7809A400C16EDB /* BFProduct.swift in Sources */,
+				CA3AF63C2A78090E00C16EDB /* EntityMonitor.swift in Sources */,
+				CA3AF6312A78068E00C16EDB /* DeepLinkHandler.swift in Sources */,
+				CA3AF62C2A7805FC00C16EDB /* Coordinator+DeepLink.swift in Sources */,
+				CA3AF62A2A7805FC00C16EDB /* Coordinator.swift in Sources */,
+				CA3AF62E2A7805FC00C16EDB /* Coordinator+Utils.swift in Sources */,
+				CA3AF6362A7806E000C16EDB /* Date+Utils.swift in Sources */,
+				CA3AF6442A7809F500C16EDB /* Logger.swift in Sources */,
 				CA3AF6152A7805D100C16EDB /* ViewController.swift in Sources */,
 				CA3AF6112A7805D100C16EDB /* AppDelegate.swift in Sources */,
+				CA3AF62B2A7805FC00C16EDB /* NavigationControllerObserver.swift in Sources */,
+				CA3AF6392A78070400C16EDB /* String+Optional.swift in Sources */,
+				CA3AF6332A7806A000C16EDB /* DeepLinkType.swift in Sources */,
+				CA3AF62D2A7805FC00C16EDB /* UINavigationController+Utils.swift in Sources */,
+				CA3AF63F2A78092F00C16EDB /* IAPHelper.swift in Sources */,
 				CA3AF6132A7805D100C16EDB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
