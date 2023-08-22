@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ButtonCollectionViewCell" customModule="ALEBenchmark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="637" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="637" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdL-21-uPV">
+                        <rect key="frame" x="0.0" y="0.0" width="637" height="198"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TuK-am-9pn">
+                                <rect key="frame" x="8" y="0.0" width="621" height="198"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjE-Qz-Mwr">
+                                        <rect key="frame" x="0.0" y="0.0" width="621" height="198"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="YAj-TE-csa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TuK-am-9pn" firstAttribute="top" secondItem="NdL-21-uPV" secondAttribute="top" id="L12-zu-zKb"/>
+                            <constraint firstAttribute="bottom" secondItem="TuK-am-9pn" secondAttribute="bottom" id="izJ-1v-Wi7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TuK-am-9pn" secondAttribute="trailing" id="oYv-So-jJz"/>
+                            <constraint firstItem="TuK-am-9pn" firstAttribute="leading" secondItem="NdL-21-uPV" secondAttribute="leadingMargin" id="wK2-pq-cRy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="NdL-21-uPV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JdM-57-n1f"/>
+                <constraint firstAttribute="bottom" secondItem="NdL-21-uPV" secondAttribute="bottom" id="KKg-nC-LB1"/>
+                <constraint firstAttribute="trailing" secondItem="NdL-21-uPV" secondAttribute="trailing" id="fto-4t-Gle"/>
+                <constraint firstItem="NdL-21-uPV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yXc-zS-EBs"/>
+            </constraints>
+            <size key="customSize" width="637" height="198"/>
+            <connections>
+                <outlet property="button" destination="MjE-Qz-Mwr" id="cRE-ZO-irf"/>
+            </connections>
+            <point key="canvasLocation" x="563.04347826086962" y="171.42857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

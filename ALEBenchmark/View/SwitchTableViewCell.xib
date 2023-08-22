@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="60" id="g3h-uT-iq8" customClass="SwitchTableViewCell" customModule="BreakFree" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g3h-uT-iq8" id="sPe-X1-FWP">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NEU-0c-9Eh">
+                        <rect key="frame" x="20" y="14.5" width="378" height="31"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1S-EK-7UR" customClass="MainTextLabel" customModule="BreakFree" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="7" width="321" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ii-Hm-gug">
+                                <rect key="frame" x="329" y="0.0" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NEU-0c-9Eh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sPe-X1-FWP" secondAttribute="top" constant="4" id="Drr-Gd-fY3"/>
+                    <constraint firstItem="NEU-0c-9Eh" firstAttribute="leading" secondItem="sPe-X1-FWP" secondAttribute="leadingMargin" id="Qzx-YI-DnL"/>
+                    <constraint firstItem="NEU-0c-9Eh" firstAttribute="trailing" secondItem="sPe-X1-FWP" secondAttribute="trailingMargin" id="iKz-QV-EdZ"/>
+                    <constraint firstItem="NEU-0c-9Eh" firstAttribute="centerY" secondItem="sPe-X1-FWP" secondAttribute="centerY" id="jXM-0q-EzG"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NEU-0c-9Eh" secondAttribute="bottom" constant="4" id="mHL-dM-alD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="switch" destination="6ii-Hm-gug" id="ckM-Br-srH"/>
+                <outlet property="titleLabel" destination="U1S-EK-7UR" id="OAw-Ax-sxi"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="131.91964285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

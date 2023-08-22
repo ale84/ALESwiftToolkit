@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="128" id="wvH-7X-ZIk" customClass="ButtonTableViewCell" customModule="BreakFree" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wvH-7X-ZIk" id="FmF-AN-vIK">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rUf-hP-B3w">
+                        <rect key="frame" x="20" y="0.0" width="458" height="128"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzc-fP-b5e">
+                                <rect key="frame" x="0.0" y="0.0" width="458" height="128"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="wvH-7X-ZIk" eventType="touchUpInside" id="36s-Lx-mlZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="tintColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rUf-hP-B3w" firstAttribute="leading" secondItem="FmF-AN-vIK" secondAttribute="leadingMargin" id="3P5-hG-Y0x"/>
+                    <constraint firstItem="rUf-hP-B3w" firstAttribute="top" secondItem="FmF-AN-vIK" secondAttribute="top" id="APi-9j-UJX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rUf-hP-B3w" secondAttribute="trailing" id="MBz-DM-UTP"/>
+                    <constraint firstAttribute="bottom" secondItem="rUf-hP-B3w" secondAttribute="bottom" id="PX1-kc-kE1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="Qzc-fP-b5e" id="G3Z-QX-0hy"/>
+            </connections>
+            <point key="canvasLocation" x="228.98550724637684" y="176.11607142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

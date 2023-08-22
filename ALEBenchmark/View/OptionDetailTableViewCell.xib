@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="KGk-i7-Jjw" customClass="OptionDetailTableViewCell" customModule="BreakFree" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JeY-Ri-J9q">
+                        <rect key="frame" x="20" y="0.0" width="413" height="188"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CYW-yt-pi8" customClass="MainTextLabel" customModule="BreakFree" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="188"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-fL-Coo" customClass="SecondaryTextLabel" customModule="BreakFree" customModuleProvider="target">
+                                <rect key="frame" x="50" y="0.0" width="363" height="188"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JeY-Ri-J9q" secondAttribute="bottom" id="5vX-Dm-hGs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JeY-Ri-J9q" secondAttribute="trailing" id="bjF-RT-DlJ"/>
+                    <constraint firstItem="JeY-Ri-J9q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nIh-NK-d3F"/>
+                    <constraint firstItem="JeY-Ri-J9q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="udO-5S-gQX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="optionTitleLabel" destination="CYW-yt-pi8" id="ghv-Ea-Zh3"/>
+                <outlet property="optionValueLabel" destination="1hh-fL-Coo" id="Mh9-NN-XAr"/>
+            </connections>
+            <point key="canvasLocation" x="234.05797101449278" y="196.20535714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

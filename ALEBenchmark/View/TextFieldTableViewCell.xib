@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="TextFieldTableViewCell" customModule="ActWidget" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="505" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="505" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k1W-pE-rZH">
+                        <rect key="frame" x="20" y="0.0" width="465" height="90"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="k1W-pE-rZH" secondAttribute="trailing" id="Uup-0m-H4e"/>
+                    <constraint firstAttribute="bottom" secondItem="k1W-pE-rZH" secondAttribute="bottom" id="bFZ-RO-RRw"/>
+                    <constraint firstItem="k1W-pE-rZH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cj4-QG-UvI"/>
+                    <constraint firstItem="k1W-pE-rZH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="n1p-zp-sJe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textField" destination="k1W-pE-rZH" id="KRm-yS-NdC"/>
+            </connections>
+            <point key="canvasLocation" x="271.73913043478262" y="162.05357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

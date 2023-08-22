@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="217" id="1df-i6-sd8" customClass="PickerViewTableViewCell" customModule="BreakFree" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="217"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1df-i6-sd8" id="Ww8-rj-WAb">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <pickerView contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="hK2-W9-UTr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="217"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="216" id="BEA-jB-5ME"/>
+                        </constraints>
+                    </pickerView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hK2-W9-UTr" firstAttribute="leading" secondItem="Ww8-rj-WAb" secondAttribute="leading" id="6GA-gt-85X"/>
+                    <constraint firstAttribute="bottom" secondItem="hK2-W9-UTr" secondAttribute="bottom" id="UhO-1J-ikX"/>
+                    <constraint firstAttribute="trailing" secondItem="hK2-W9-UTr" secondAttribute="trailing" id="i3q-Vv-icz"/>
+                    <constraint firstItem="hK2-W9-UTr" firstAttribute="top" secondItem="Ww8-rj-WAb" secondAttribute="top" id="zaH-mO-0Tw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="pxJ-YN-2cd"/>
+            <connections>
+                <outlet property="pickerView" destination="hK2-W9-UTr" id="GiK-dy-MPp"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="6"/>
+        </tableViewCell>
+    </objects>
+</document>
