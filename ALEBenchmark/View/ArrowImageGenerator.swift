@@ -1,6 +1,6 @@
 //
 //  Created by Alessio Orlando on 07/10/15.
-//  Copyright © 2015 Alessio Orlando. All rights reserved.
+//  Copyright © 2024 Alessio Orlando. All rights reserved.
 //
 
 import Foundation
@@ -13,15 +13,9 @@ enum ArrowDirection {
     case right
 }
 
-
-/// Generates images similar to table view cell disclosure indicator.
-/// Allows customization of direction, size, color and so on.
 class ArrowImageGenerator {
-
-    static var defaultColor: UIColor = {
-        let color = UIColor(red: 0.783922, green: 0.780392, blue: 0.8, alpha: 1)
-        return color
-    }()
+    
+    static var defaultColor = UIColor.tertiaryLabel
 
     class func generateArrow(withDirection direction: ArrowDirection = .right,
                              size: CGSize? = nil,
