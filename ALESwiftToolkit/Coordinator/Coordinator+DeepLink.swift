@@ -1,6 +1,6 @@
 //
 //  Created by Alessio Orlando on 10/06/2019.
-//  Copyright © 2019 Bandyer. All rights reserved.
+//  Copyright © 2025 Bandyer. All rights reserved.
 //
 
 import Foundation

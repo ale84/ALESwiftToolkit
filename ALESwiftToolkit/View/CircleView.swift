@@ -1,6 +1,6 @@
 //
 //  Created by Alessio Orlando on 04/04/16.
-//  Copyright © 2016 Alessio Orlando. All rights reserved.
+//  Copyright © 2025 Alessio Orlando. All rights reserved.
 //
 
 import UIKit

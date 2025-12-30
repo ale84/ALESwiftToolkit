@@ -1,5 +1,5 @@
 //  Created by Alessio Orlando on 13/03/18.
-//  Copyright © 2018 Alessio Orlando. All rights reserved.
+//  Copyright © 2025 Alessio Orlando. All rights reserved.
 //
 
 // Mostly grabbed from https://github.com/melvitax/DateHelper

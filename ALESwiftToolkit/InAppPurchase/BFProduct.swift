@@ -1,6 +1,6 @@
 //
 //  Created by Alessio Orlando on 02/05/18.
-//  Copyright © 2018 Alessio Orlando. All rights reserved.
+//  Copyright © 2025 Alessio Orlando. All rights reserved.
 //
 
 import Foundation
