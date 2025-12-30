@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		CA3AF60D2A7805D100C16EDB /* ALEBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALEBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3AF60D2A7805D100C16EDB /* ALESwiftToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALESwiftToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -16,12 +16,12 @@
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = CA3AF60C2A7805D100C16EDB /* ALEBenchmark */;
+			target = CA3AF60C2A7805D100C16EDB /* ALESwiftToolkit */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CA37F4B82D083DFB0046E265 /* ALEBenchmark */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (CA37F4F02D083DFB0046E265 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ALEBenchmark; sourceTree = "<group>"; };
+		CA37F4B82D083DFB0046E265 /* ALESwiftToolkit */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (CA37F4F02D083DFB0046E265 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ALESwiftToolkit; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 		CA3AF6042A7805D100C16EDB = {
 			isa = PBXGroup;
 			children = (
-				CA37F4B82D083DFB0046E265 /* ALEBenchmark */,
+				CA37F4B82D083DFB0046E265 /* ALESwiftToolkit */,
 				CA3AF60E2A7805D100C16EDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,7 +46,7 @@
 		CA3AF60E2A7805D100C16EDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA3AF60D2A7805D100C16EDB /* ALEBenchmark.app */,
+				CA3AF60D2A7805D100C16EDB /* ALESwiftToolkit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,9 +54,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA3AF60C2A7805D100C16EDB /* ALEBenchmark */ = {
+		CA3AF60C2A7805D100C16EDB /* ALESwiftToolkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA3AF6212A7805D200C16EDB /* Build configuration list for PBXNativeTarget "ALEBenchmark" */;
+			buildConfigurationList = CA3AF6212A7805D200C16EDB /* Build configuration list for PBXNativeTarget "ALESwiftToolkit" */;
 			buildPhases = (
 				CA3AF6092A7805D100C16EDB /* Sources */,
 				CA3AF60A2A7805D100C16EDB /* Frameworks */,
@@ -67,11 +67,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CA37F4B82D083DFB0046E265 /* ALEBenchmark */,
+				CA37F4B82D083DFB0046E265 /* ALESwiftToolkit */,
 			);
-			name = ALEBenchmark;
+			name = ALESwiftToolkit;
 			productName = ALEBenchmark;
-			productReference = CA3AF60D2A7805D100C16EDB /* ALEBenchmark.app */;
+			productReference = CA3AF60D2A7805D100C16EDB /* ALESwiftToolkit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -89,7 +89,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CA3AF6082A7805D100C16EDB /* Build configuration list for PBXProject "ALEBenchmark" */;
+			buildConfigurationList = CA3AF6082A7805D100C16EDB /* Build configuration list for PBXProject "ALESwiftToolkit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -102,7 +102,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA3AF60C2A7805D100C16EDB /* ALEBenchmark */,
+				CA3AF60C2A7805D100C16EDB /* ALESwiftToolkit */,
 			);
 		};
 /* End PBXProject section */
@@ -262,7 +262,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = it.alessio.orlando.ALEBenchmark;
+				PRODUCT_BUNDLE_IDENTIFIER = it.alessio.orlando.ALESwiftToolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -290,7 +290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = it.alessio.orlando.ALEBenchmark;
+				PRODUCT_BUNDLE_IDENTIFIER = it.alessio.orlando.ALESwiftToolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA3AF6082A7805D100C16EDB /* Build configuration list for PBXProject "ALEBenchmark" */ = {
+		CA3AF6082A7805D100C16EDB /* Build configuration list for PBXProject "ALESwiftToolkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA3AF61F2A7805D200C16EDB /* Debug */,
@@ -310,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA3AF6212A7805D200C16EDB /* Build configuration list for PBXNativeTarget "ALEBenchmark" */ = {
+		CA3AF6212A7805D200C16EDB /* Build configuration list for PBXNativeTarget "ALESwiftToolkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA3AF6222A7805D200C16EDB /* Debug */,
