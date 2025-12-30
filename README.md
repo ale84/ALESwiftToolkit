@@ -13,9 +13,14 @@ The goal is to gather small, well-written building blocks that can be reused acr
 - 🧪 In App Purchase
 - And more...
 
-
 ### Objective
 Personal toolkit with ready to use components and technical experiments.
+
+### Requirements
+| Platform | Minimum version |
+|---------|-----------------|
+| iOS     | 16.4+ (configurable) |
+| Swift   | 6.0 |
 
 ### Installation
 For now, components can be imported directly into your project.
