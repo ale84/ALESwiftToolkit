@@ -1,18 +1,21 @@
 //
 //  Created by Alessio Orlando on 03/05/2019.
-//  Copyright © 2019 Alessio Orlando. All rights reserved.
+//  Copyright © 2025 Alessio Orlando. All rights reserved.
 //
 
 import UIKit
 
+/// Use this class to observe a navigation controller to be notified when a view controller gets popped out of the navigation stack.
+/// Useful for coordinators, to remove any child coordinator that was presenting the popped view controller.
+@MainActor
 class NavigationControllerObserver: NSObject {
     private(set) var navigationController: UINavigationController
     private(set) var notificationCenter: NotificationCenter
 
-    static var didPopViewControllerNotification: Notification.Name = Notification.Name("com.alessioorlando.benchmark.NavigationControllerObserver.didPopViewControllerNotification")
+    static var didPopViewControllerNotification: Notification.Name = Notification.Name("com.ale.toolkit.NavigationControllerObserver.didPopViewControllerNotification")
 
-    static var navigationControllerKey = "com.alessioorlando.benchmark.NavigationControllerObserver.navigationControllerKey"
-    static var poppedViewControllerKey = "com.alessioorlando.benchmark.NavigationControllerObserver.poppedViewControllerKey"
+    static var navigationControllerKey = "com.ale.toolkit.NavigationControllerObserver.navigationControllerKey"
+    static var poppedViewControllerKey = "com.ale.toolkit.NavigationControllerObserver.poppedViewControllerKey"
 
     init(with navigationController: UINavigationController,
          notificationCenter: NotificationCenter = NotificationCenter.default) {

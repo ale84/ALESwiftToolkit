@@ -7,7 +7,7 @@ import Foundation
 import StoreKit
 
 class BFProduct {
-    private (set) var skProduct: SKProduct
+    private(set) var skProduct: SKProduct
 
     var productIdentifier: String {
         skProduct.productIdentifier

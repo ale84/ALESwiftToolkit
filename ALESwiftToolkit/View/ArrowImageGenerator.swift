@@ -13,9 +13,11 @@ enum ArrowDirection {
     case right
 }
 
+
+@MainActor
 class ArrowImageGenerator {
     
-    static var defaultColor = UIColor.tertiaryLabel
+    static let defaultColor = UIColor.tertiaryLabel
 
     class func generateArrow(withDirection direction: ArrowDirection = .right,
                              size: CGSize? = nil,

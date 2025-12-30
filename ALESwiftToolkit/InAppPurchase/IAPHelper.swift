@@ -1,11 +1,14 @@
 //
 //  Created by Alessio Orlando on 02/05/18.
-//  Copyright © 2018 Alessio Orlando. All rights reserved.
+//  Copyright © 2025 Alessio Orlando. All rights reserved.
 //
 
 import Foundation
 import StoreKit
 
+typealias ProductIdentifier = String
+
+@MainActor
 class IAPHelper: NSObject {
 
     enum IAPError: Error {
@@ -41,18 +44,18 @@ class IAPHelper: NSObject {
     private var productsRequest: SKProductsRequest?
 
     private var isFetchingProducts: Bool {
-        return productsRequest != nil
+        productsRequest != nil
     }
 
-    private (set) var completionHandlers: [RequestProductsCompletionHandler] = []
+    private(set) var completionHandlers: [RequestProductsCompletionHandler] = []
 
-    private (set) var productIdentifiers: Set<String>
+    private(set) var productIdentifiers: Set<ProductIdentifier>
 
     class func canMakePayments() -> Bool {
-        return SKPaymentQueue.canMakePayments()
+        SKPaymentQueue.canMakePayments()
     }
 
-    init(with productIds: Set<String>) {
+    init(with productIds: Set<ProductIdentifier>) {
         self.productIdentifiers = productIds
     }
 
@@ -63,9 +66,10 @@ class IAPHelper: NSObject {
             return
         }
 
-        productsRequest = SKProductsRequest(productIdentifiers: productIdentifiers)
-        productsRequest?.delegate = self
-        productsRequest?.start()
+        let request = SKProductsRequest(productIdentifiers: productIdentifiers)
+        productsRequest = request
+        request.delegate = self
+        request.start()
     }
 
     func purchaseProduct(_ product: BFProduct) {
@@ -84,17 +88,31 @@ class IAPHelper: NSObject {
 }
 
 extension IAPHelper: SKProductsRequestDelegate {
-    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        products =  response.products.map { BFProduct(with: $0) }
-        products.sort { $0.price.compare($1.price) == .orderedAscending }
-        completionHandlers.forEach { completion in
-            DispatchQueue.main.async { completion(.success(self.products)) }
+    nonisolated func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        // Hop to the main actor to mutate main-actor-isolated state and call handlers.
+        Task { @MainActor in
+            self.products = response.products.map { BFProduct(with: $0) }
+            self.products.sort { $0.price.compare($1.price) == .orderedAscending }
+
+            // Take immutable snapshots to avoid capturing self/state later.
+            let currentProducts = self.products
+            let handlers = self.completionHandlers
+
+            // Clear request state before invoking handlers to avoid re-entrancy issues.
+            self.clearRequest()
+
+            // Call handlers on the main actor (no extra dispatch needed).
+            handlers.forEach { completion in
+                completion(.success(currentProducts))
+            }
         }
-        clearRequest()
     }
 
-    func request(_ request: SKRequest, didFailWithError error: Error) {
-        completionHandlers.forEach { $0(.failure(.productRequestError(detail: error))) }
-        clearRequest()
+    nonisolated func request(_ request: SKRequest, didFailWithError error: Error) {
+        Task { @MainActor in
+            let handlers = self.completionHandlers
+            self.clearRequest()
+            handlers.forEach { $0(.failure(.productRequestError(detail: error))) }
+        }
     }
 }
