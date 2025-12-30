@@ -1,7 +1,7 @@
 //
 //  Created by Alessio Orlando on 10/02/2020
 //  Copyright © 2025 Alessio Orlando. All rights reserved.
-//  
+//
 
 import UIKit
 
@@ -41,22 +41,35 @@ class ExpandTextButton: UIButton {
     
     private func initialSetup() {
         
-        setTitle(NSLocalizedString("more", comment: ""), for: .normal)
+        configuration = .borderless()
         
-        layer.cornerRadius = 10
+        configuration?.contentInsets = .init(top: 0, leading: 8, bottom: 0, trailing: 0)
         
-        contentHorizontalAlignment = .trailing
+        // Add a string for each localization you want to support in Localizable.strings
+        configuration?.title = NSLocalizedString("more", comment: "")
         
-        titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
+        configuration?.cornerStyle = .dynamic
+        
+        configuration?.titleAlignment = .trailing
+        
+        // Register for size class changes on self. Declare the first paramteter as `self: Self`.
+        // Declaring self as the first parameter eliminates the need to capture self from outside the closure, and avoids strong reference cycles.
+        if #available(iOS 17.0, *) {
+            registerForTraitChanges([UITraitUserInterfaceStyle.self])
+            { (self: Self, previousTraitCollection: UITraitCollection) in
                 
-        //configureTitleColor()
+                self.handleUserInterfaceStyleChange(previousTraitCollection)
+            }
+        }
         
         configureShadow()
     }
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        initialSetup()
+        Task { @MainActor in
+            self.initialSetup()
+        }
     }
     
     private func configureShadow() {
@@ -70,22 +83,26 @@ class ExpandTextButton: UIButton {
         layer.shadowRadius = 6.0
     }
     
-//    private func configureTitleColor() {
-//        switch buttonType {
-//        case .custom:
-//            setTitleColor(theme.mainColor, for: [])
-//        default:
-//            tintColor = theme.mainColor
-//        }
-//    }
-    
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
         
-        guard previousTraitCollection?.userInterfaceStyle != traitCollection.userInterfaceStyle else {
+        if #unavailable(iOS 17.0) {
+            super.traitCollectionDidChange(previousTraitCollection)
+            
+            guard let previousTraitCollection = previousTraitCollection else {
+                return
+            }
+            
+            handleUserInterfaceStyleChange(previousTraitCollection)
+        }
+    }
+    
+    private func handleUserInterfaceStyleChange(_ previousTraitCollection: UITraitCollection) {
+        
+        guard previousTraitCollection.userInterfaceStyle != traitCollection.userInterfaceStyle else {
             return
         }
         
         configureShadow()
     }
 }
+
